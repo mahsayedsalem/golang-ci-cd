@@ -1,11 +1,16 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-	"github.com/mahsayedsalem/golang-ci-cd/hello"
-)
+var version = "dev"
 
 func main() {
-	fmt.Println(hello.Greet())
+
+	fmt.Printf("Version: %s\n", version)
+
+	fmt.Println(hello())
+}
+
+func hello() string {
+	return "Hello Glang"
 }
